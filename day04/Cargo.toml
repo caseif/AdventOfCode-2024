@@ -1,0 +1,11 @@
+[package]
+name = "day04"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "day04"
+path = "day04.rs"
+
+[dependencies]
+aoc2024-common = { workspace = true }
