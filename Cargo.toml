@@ -3,3 +3,12 @@ resolver = "2"
 members = [
     "day*"
 ]
+
+[workspace.package]
+version = "0.0.1"
+edition = "2021"
+
+[workspace.dependencies]
+aoc2024-common = { path = "./common" }
+itertools = "0.13.0"
+regex = "1.11.1"

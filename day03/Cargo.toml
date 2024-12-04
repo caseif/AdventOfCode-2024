@@ -1,12 +1,12 @@
 [package]
-name = "day01"
+name = "day03"
 version.workspace = true
 edition.workspace = true
 
 [[bin]]
-name = "day01"
-path = "day01.rs"
+name = "day03"
+path = "day03.rs"
 
 [dependencies]
 aoc2024-common = { workspace = true }
-itertools = { workspace = true }
+regex = { workspace = true }

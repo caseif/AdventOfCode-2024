@@ -1,5 +1,5 @@
 use itertools::Itertools;
-use aoc2024_common::file::read_input_file;
+use aoc2024_common::file::read_input_lines;
 
 fn main() {
     let (list_a, list_b) = parse_lists();
@@ -8,7 +8,7 @@ fn main() {
 }
 
 fn parse_lists() -> (Vec<i32>, Vec<i32>) {
-    let lines = read_input_file();
+    let lines = read_input_lines();
     let (list_a_unsorted, list_b_unsorted): (Vec<_>, Vec<_>) = lines.iter()
         .map(|line| line.split_whitespace().collect_tuple().unwrap())
         .map(|(a, b)| (a.parse::<i32>().unwrap(), b.parse::<i32>().unwrap()))
