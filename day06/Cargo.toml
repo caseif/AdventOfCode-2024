@@ -1,0 +1,12 @@
+[package]
+name = "day06"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "day06"
+path = "day06.rs"
+
+[dependencies]
+aoc2024-common = { workspace = true }
+workerpool = "1.2.1"
