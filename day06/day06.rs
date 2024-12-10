@@ -5,6 +5,8 @@ use workerpool::Pool;
 use workerpool::thunk::{Thunk, ThunkWorker};
 use aoc2024_common::file::read_input_lines;
 
+const DAY: u32 = 6;
+
 const OBSTACLE_CHAR: char = '#';
 const INITIAL_POS_CHAR: char = '^';
 
@@ -60,7 +62,7 @@ struct WorldParameters {
 }
 
 fn get_world_parameters() -> WorldParameters {
-    let lines = read_input_lines();
+    let lines = read_input_lines(DAY);
 
     let height = lines.len() as i32;
     let width = lines[0].len() as i32;

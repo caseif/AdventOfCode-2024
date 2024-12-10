@@ -1,5 +1,7 @@
 use aoc2024_common::file::read_input_lines;
 
+const DAY: u32 = 2;
+
 fn main() {
     println!("Part 1: {}", solve_p1());
     println!("Part 2: {}", solve_p2());
@@ -14,7 +16,7 @@ fn solve_p2() -> i32 {
 }
 
 fn get_safe_levels_count(allow_dampen: bool) -> i32 {
-    let lines = read_input_lines();
+    let lines = read_input_lines(DAY);
     let mut count = 0;
     'outer: for (_line_num, line) in lines.iter().enumerate() {
         let nums: Vec<_> = line.split_whitespace().map(|s| s.parse::<i32>().unwrap()).collect();

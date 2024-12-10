@@ -4,7 +4,7 @@ use itertools;
 use itertools::Itertools;
 
 fn main() {
-    let lines = read_input_lines();
+    let lines = read_input_lines(8);
     let width = lines[0].len() as i32;
     let height = lines.len() as i32;
     let antennas = get_antennas(&lines);

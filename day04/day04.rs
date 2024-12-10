@@ -1,6 +1,8 @@
 use std::iter;
 use aoc2024_common::file::read_input_lines;
 
+const DAY: u32 = 4;
+
 const P1_NEEDLE: &str = "XMAS";
 const P1_CTX_RADIUS: i32 = P1_NEEDLE.len() as i32 - 1;
 const P2_CTX_RADIUS: i32 = 1;
@@ -12,7 +14,7 @@ fn main() {
 }
 
 fn solve_p1() -> i32 {
-    let lines = read_input_lines();
+    let lines = read_input_lines(DAY);
 
     let mut count = 0;
     for (row, line) in lines.iter().enumerate() {
@@ -28,7 +30,7 @@ fn solve_p1() -> i32 {
 }
 
 fn solve_p2() -> i32 {
-    let lines = read_input_lines();
+    let lines = read_input_lines(DAY);
 
     let mut count = 0;
     for (row, line) in lines.iter().enumerate() {

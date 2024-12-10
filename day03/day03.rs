@@ -1,20 +1,22 @@
 use regex::Regex;
 use aoc2024_common::file::read_input_string;
 
+const DAY: u32 = 3;
+
 fn main() {
     println!("Part 1: {}", solve_p1());
     println!("Part 2: {}", solve_p2());
 }
 
 fn solve_p1() -> i32 {
-    let input = read_input_string();
+    let input = read_input_string(DAY);
     process_muls(input.as_str())
 }
 
 fn solve_p2() -> i32 {
     let do_dont_re = Regex::new(r"(?:^|do\(\))(.*?)(?:$|don't\(\))").unwrap();
 
-    let input = read_input_string();
+    let input = read_input_string(DAY);
 
     let mut total = 0;
         for (_, [inner]) in do_dont_re.captures_iter(&input).map(|c| c.extract()) {

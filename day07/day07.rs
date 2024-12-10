@@ -1,8 +1,10 @@
 use std::collections::VecDeque;
 use aoc2024_common::file::read_input_lines;
 
+const DAY: u32 = 7;
+
 fn main() {
-    let lines = read_input_lines();
+    let lines = read_input_lines(DAY);
     println!("Part 1: {}", solve_p1(&lines));
     println!("Part 2: {}", solve_p2(&lines));
 }

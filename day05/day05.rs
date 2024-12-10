@@ -3,8 +3,10 @@ use std::collections::HashMap;
 use itertools::Itertools;
 use aoc2024_common::file::read_input_lines;
 
+const DAY: u32 = 5;
+
 fn main() {
-    let lines = read_input_lines();
+    let lines = read_input_lines(DAY);
 
     let (rule_lines, seq_lines): (Vec<_>, Vec<_>) = lines.into_iter().partition(|line| line.contains("|"));
 

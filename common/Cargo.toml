@@ -6,3 +6,6 @@ edition = "2021"
 [lib]
 name = "aoc2024_common"
 crate-type = ["rlib"]
+
+[dependencies]
+reqwest = { workspace = true }

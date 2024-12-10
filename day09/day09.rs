@@ -12,7 +12,7 @@ fn main() {
 
 fn solve_p1() -> u64 {
     // add phantom free space at end to allow clean division into 2-element steps
-    let input = read_input_string() + "0";
+    let input = read_input_string(9) + "0";
     let mut map = Vec::new();
     for (file_id, (file_run_c, space_run_c)) in input.chars().tuples().enumerate() {
         map.extend(vec![Some(file_id); file_run_c as usize - '0' as usize]);
@@ -44,7 +44,7 @@ fn solve_p1() -> u64 {
 
 fn solve_p2() -> u64 {
     // add phantom free space at end to allow clean division into 2-element steps
-    let input = read_input_string() + "0";
+    let input = read_input_string(9) + "0";
     let mut files = Vec::new();
     let mut free_space = FreeSpace::new();
     let mut cur_block_off = 0;

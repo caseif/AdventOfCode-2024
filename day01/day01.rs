@@ -1,6 +1,8 @@
 use itertools::Itertools;
 use aoc2024_common::file::read_input_lines;
 
+const DAY: u32 = 1;
+
 fn main() {
     let (list_a, list_b) = parse_lists();
     println!("Part 1: {}", solve_p1(&list_a, &list_b));
@@ -8,7 +10,7 @@ fn main() {
 }
 
 fn parse_lists() -> (Vec<i32>, Vec<i32>) {
-    let lines = read_input_lines();
+    let lines = read_input_lines(DAY);
     let (list_a_unsorted, list_b_unsorted): (Vec<_>, Vec<_>) = lines.iter()
         .map(|line| line.split_whitespace().collect_tuple().unwrap())
         .map(|(a, b)| (a.parse::<i32>().unwrap(), b.parse::<i32>().unwrap()))
