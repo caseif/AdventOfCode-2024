@@ -13,3 +13,4 @@ aoc2024-common = { path = "./common" }
 itertools = "0.13.0"
 regex = "1.11.1"
 reqwest = { version = "0.12.9", features = ["blocking"] }
+workerpool = "1.2.1"
