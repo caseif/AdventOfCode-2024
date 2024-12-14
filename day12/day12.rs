@@ -5,7 +5,6 @@ use aoc2024_common::file::read_input_lines;
 
 fn main() {
     println!("Part 1: {}", solve(false));
-    println!();
     println!("Part 2: {}", solve(true));
 }
 
