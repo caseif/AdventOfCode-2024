@@ -59,7 +59,3 @@ fn solve() -> (u32, u32) {
         trails.into_iter().map(|(_, dests)| dests.len() as u32).sum(),
     )
 }
-
-fn solve_p2() -> u32 {
-    0
-}

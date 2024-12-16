@@ -20,6 +20,10 @@ pub fn read_input_lines(day: u32) -> Vec<String> {
      read_input_string(day).split("\n").filter(|s| !s.is_empty()).map(|s| s.to_string()).collect()
 }
 
+pub fn read_input_lines_preserve_blank(day: u32) -> Vec<String> {
+     read_input_string(day).split("\n").map(|s| s.to_string()).collect()
+}
+
 fn try_open_file(day: u32) -> Result<File, ()> {
      if fs::exists(format!("./{}", INPUT_FILE_NAME)).unwrap_or(false) {
           Ok(File::open(format!("./{}", INPUT_FILE_NAME)).expect("Failed to open input file"))
