@@ -11,6 +11,7 @@ edition = "2021"
 [workspace.dependencies]
 aoc2024-common = { path = "./common" }
 itertools = "0.13.0"
+num_enum = "0.7.3"
 regex = "1.11.1"
 reqwest = { version = "0.12.9", features = ["blocking"] }
 workerpool = "1.2.1"
