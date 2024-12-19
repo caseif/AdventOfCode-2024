@@ -1,0 +1,12 @@
+[package]
+name = "day19"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "day19"
+path = "day19.rs"
+
+[dependencies]
+aoc2024-common = { workspace = true }
+itertools = { workspace = true }
